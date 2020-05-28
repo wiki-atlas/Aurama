@@ -10,7 +10,7 @@ Following is a sample screenshot on the device we used for taking samples. GPS a
 
 <div style="text-align: center;">
 <figure>
-<img src="IMG_2952.PNG" alt="Screenshot" style="zoom:50%;" align="middle"/>
+<img src="IMG_2952.PNG" alt="Screenshot" style="zoom:30%;" align="middle"/>
 <figcaption>Figure 1: Sample Capture Screenshot</figcaption>
 </figure>
 </div> 
