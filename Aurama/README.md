@@ -4,9 +4,9 @@ Auther: Jimin Tan
 
 This is the iOS implementation of the paper: Notable Site Recognition using Deep Learning on Mobile and Crowd-sourced Imagery
 
-<div style="text-align: center;">
-<img src="Screenshots/ScreenShot1.png" alt="rect-frame" style="zoom:20%;" align="middle"/>   <img src="Screenshots/ScreenShot2.png" alt="circ-frame" style="zoom:20%;" align="middle"/> <img src="Screenshots/ScreenShot3.png" alt="final-frame" style="zoom:20%;" align="middle"/>
-</div>
+|Default|Localization|Wikipedia Description|
+| :------: | :------: | :------: |
+|![ScreenShot1](Screenshots/ScreenShot1.png)|![ScreenShot2](Screenshots/ScreenShot2.png)|![ScreenShot3](Screenshots/ScreenShot3.png)
 
 ## Usage:
 
