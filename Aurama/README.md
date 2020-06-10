@@ -8,10 +8,16 @@ This is the iOS implementation of the paper: Notable Site Recognition using Deep
 
 ## Usage:
 
-1. On macOS, install CocoaPods
-2. run `pod install`
-3. open `Aurama.xcworkspace` to build and run Aurama
+###On macOS:
+1. Install CocoaPods ([https://cocoapods.org](https://cocoapods.org)).
+2. run `pod install` where `Podfile` is located.
+3. open `Aurama.xcworkspace` to build and run Aurama.
 4. Import images from in TestPhoto to iOS device to test model performance on different images.
+
+###In the app:
+5. Click `Select Image` to select image you want to classify.
+6. Click `Classify` to find the location of the place on the image.
+7. Click on the wiki logo for details about the location. If threre is no corresponding entry, the wiki logo will not showup.
 
 ## Credit:
 
