@@ -13,7 +13,7 @@ This is the iOS implementation of the paper: Notable Site Recognition using Deep
 1. On macOS, install CocoaPods
 2. run `pod install`
 3. open `Aurama.xcworkspace` to build and run Aurama
-4. Drag `png` files in TestPhoto to iOS device to test model performance on different images.
+4. Import images from in TestPhoto to iOS device to test model performance on different images.
 
 ## Credit:
 
