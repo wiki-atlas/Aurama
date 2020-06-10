@@ -1,7 +1,5 @@
 # Aurama - A mobile application for finding places of interest
 
-Auther: Jimin Tan
-
 This is the iOS implementation of the paper: Notable Site Recognition using Deep Learning on Mobile and Crowd-sourced Imagery
 
 |Default|Localization|Wikipedia Description|
