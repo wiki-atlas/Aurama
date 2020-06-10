@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		086F347A217710C7002CF6EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F3479217710C7002CF6EA /* AppDelegate.swift */; };
+		086F347C217710C7002CF6EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F347B217710C7002CF6EA /* ViewController.swift */; };
+		086F347F217710C7002CF6EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086F347D217710C7002CF6EA /* Main.storyboard */; };
+		086F3481217710CB002CF6EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086F3480217710CB002CF6EA /* Assets.xcassets */; };
+		086F3484217710CB002CF6EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086F3482217710CB002CF6EA /* LaunchScreen.storyboard */; };
+		086F349021771B58002CF6EA /* UIImage+Segmentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F348F21771B58002CF6EA /* UIImage+Segmentation.swift */; };
+		086F349A21782BB4002CF6EA /* GraySegmentFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F349921782BB4002CF6EA /* GraySegmentFilter.swift */; };
+		5D03427248CA1B30CC137F13 /* libPods-Aurama.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DE5E80DB5C32AC0018C7FE /* libPods-Aurama.a */; };
+		EC5F3488249164BA00464A48 /* arch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC5F3486249164B900464A48 /* arch.jpg */; };
+		EC5F3489249164BA00464A48 /* wiki.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5F3487249164B900464A48 /* wiki.png */; };
+		EC5F348B249164CC00464A48 /* cityscapes.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EC5F348A249164CC00464A48 /* cityscapes.mlmodel */; };
+		ECF8D30823FA02A700D58308 /* scriptmodule_withMask.pt in Resources */ = {isa = PBXBuildFile; fileRef = ECF8D30223FA02A700D58308 /* scriptmodule_withMask.pt */; };
+		ECF8D30923FA02A700D58308 /* GSV_sites.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECF8D30323FA02A700D58308 /* GSV_sites.txt */; };
+		ECF8D30A23FA02A700D58308 /* TorchModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = ECF8D30623FA02A700D58308 /* TorchModule.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		086F3476217710C7002CF6EA /* Aurama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aurama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		086F3479217710C7002CF6EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		086F347B217710C7002CF6EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		086F347E217710C7002CF6EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		086F3480217710CB002CF6EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		086F3483217710CB002CF6EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		086F3485217710CB002CF6EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		086F348F21771B58002CF6EA /* UIImage+Segmentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Segmentation.swift"; sourceTree = "<group>"; };
+		086F349921782BB4002CF6EA /* GraySegmentFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraySegmentFilter.swift; sourceTree = "<group>"; };
+		42290EC8CB400BB891AA9B70 /* Pods-deeplab-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deeplab-ios.release.xcconfig"; path = "Target Support Files/Pods-deeplab-ios/Pods-deeplab-ios.release.xcconfig"; sourceTree = "<group>"; };
+		6901A7741FE479518C4D03E1 /* Pods-Aurama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aurama.debug.xcconfig"; path = "Target Support Files/Pods-Aurama/Pods-Aurama.debug.xcconfig"; sourceTree = "<group>"; };
+		95CACEF3E8E23358BF501AC9 /* Pods-Aurama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aurama.release.xcconfig"; path = "Target Support Files/Pods-Aurama/Pods-Aurama.release.xcconfig"; sourceTree = "<group>"; };
+		AB93BCED576078F3FF5D52AC /* Pods-deeplab-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deeplab-ios.debug.xcconfig"; path = "Target Support Files/Pods-deeplab-ios/Pods-deeplab-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		D4DE5E80DB5C32AC0018C7FE /* libPods-Aurama.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aurama.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5F3486249164B900464A48 /* arch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arch.jpg; sourceTree = "<group>"; };
+		EC5F3487249164B900464A48 /* wiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wiki.png; sourceTree = "<group>"; };
+		EC5F348A249164CC00464A48 /* cityscapes.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = cityscapes.mlmodel; sourceTree = "<group>"; };
+		ECF8D30223FA02A700D58308 /* scriptmodule_withMask.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = scriptmodule_withMask.pt; sourceTree = "<group>"; };
+		ECF8D30323FA02A700D58308 /* GSV_sites.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GSV_sites.txt; sourceTree = "<group>"; };
+		ECF8D30523FA02A700D58308 /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
+		ECF8D30623FA02A700D58308 /* TorchModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchModule.mm; sourceTree = "<group>"; };
+		ECF8D30723FA02A700D58308 /* TorchModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorchModule.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		086F3473217710C7002CF6EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D03427248CA1B30CC137F13 /* libPods-Aurama.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		086F346D217710C7002CF6EA = {
+			isa = PBXGroup;
+			children = (
+				086F3478217710C7002CF6EA /* Aurama */,
+				086F3477217710C7002CF6EA /* Products */,
+				2D3BADA54CFEE3B094060045 /* Pods */,
+				F097930766D03D023C0D3A57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		086F3477217710C7002CF6EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				086F3476217710C7002CF6EA /* Aurama.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		086F3478217710C7002CF6EA /* Aurama */ = {
+			isa = PBXGroup;
+			children = (
+				EC5F34852491645300464A48 /* UIAssets */,
+				ECF8D30123FA02A700D58308 /* model */,
+				ECF8D30423FA02A700D58308 /* TorchBridge */,
+				086F3479217710C7002CF6EA /* AppDelegate.swift */,
+				086F347B217710C7002CF6EA /* ViewController.swift */,
+				086F348F21771B58002CF6EA /* UIImage+Segmentation.swift */,
+				086F349921782BB4002CF6EA /* GraySegmentFilter.swift */,
+				086F347D217710C7002CF6EA /* Main.storyboard */,
+				086F3480217710CB002CF6EA /* Assets.xcassets */,
+				086F3482217710CB002CF6EA /* LaunchScreen.storyboard */,
+				086F3485217710CB002CF6EA /* Info.plist */,
+			);
+			path = Aurama;
+			sourceTree = "<group>";
+		};
+		2D3BADA54CFEE3B094060045 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB93BCED576078F3FF5D52AC /* Pods-deeplab-ios.debug.xcconfig */,
+				42290EC8CB400BB891AA9B70 /* Pods-deeplab-ios.release.xcconfig */,
+				6901A7741FE479518C4D03E1 /* Pods-Aurama.debug.xcconfig */,
+				95CACEF3E8E23358BF501AC9 /* Pods-Aurama.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC5F34852491645300464A48 /* UIAssets */ = {
+			isa = PBXGroup;
+			children = (
+				EC5F3486249164B900464A48 /* arch.jpg */,
+				EC5F3487249164B900464A48 /* wiki.png */,
+			);
+			path = UIAssets;
+			sourceTree = "<group>";
+		};
+		ECF8D30123FA02A700D58308 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EC5F348A249164CC00464A48 /* cityscapes.mlmodel */,
+				ECF8D30223FA02A700D58308 /* scriptmodule_withMask.pt */,
+				ECF8D30323FA02A700D58308 /* GSV_sites.txt */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ECF8D30423FA02A700D58308 /* TorchBridge */ = {
+			isa = PBXGroup;
+			children = (
+				ECF8D30523FA02A700D58308 /* HelloWorld-Bridging-Header.h */,
+				ECF8D30623FA02A700D58308 /* TorchModule.mm */,
+				ECF8D30723FA02A700D58308 /* TorchModule.h */,
+			);
+			path = TorchBridge;
+			sourceTree = "<group>";
+		};
+		F097930766D03D023C0D3A57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4DE5E80DB5C32AC0018C7FE /* libPods-Aurama.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		086F3475217710C7002CF6EA /* Aurama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 086F3488217710CB002CF6EA /* Build configuration list for PBXNativeTarget "Aurama" */;
+			buildPhases = (
+				210E668DB4ADEFAAD3BF70B8 /* [CP] Check Pods Manifest.lock */,
+				086F3472217710C7002CF6EA /* Sources */,
+				086F3473217710C7002CF6EA /* Frameworks */,
+				086F3474217710C7002CF6EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aurama;
+			productName = "deeplab-ios";
+			productReference = 086F3476217710C7002CF6EA /* Aurama.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		086F346E217710C7002CF6EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "wiki-atlas";
+				TargetAttributes = {
+					086F3475217710C7002CF6EA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 086F3471217710C7002CF6EA /* Build configuration list for PBXProject "Aurama" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 086F346D217710C7002CF6EA;
+			productRefGroup = 086F3477217710C7002CF6EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				086F3475217710C7002CF6EA /* Aurama */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		086F3474217710C7002CF6EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF8D30823FA02A700D58308 /* scriptmodule_withMask.pt in Resources */,
+				086F3484217710CB002CF6EA /* LaunchScreen.storyboard in Resources */,
+				EC5F3489249164BA00464A48 /* wiki.png in Resources */,
+				086F3481217710CB002CF6EA /* Assets.xcassets in Resources */,
+				086F347F217710C7002CF6EA /* Main.storyboard in Resources */,
+				EC5F3488249164BA00464A48 /* arch.jpg in Resources */,
+				ECF8D30923FA02A700D58308 /* GSV_sites.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		210E668DB4ADEFAAD3BF70B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aurama-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		086F3472217710C7002CF6EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086F347C217710C7002CF6EA /* ViewController.swift in Sources */,
+				086F349A21782BB4002CF6EA /* GraySegmentFilter.swift in Sources */,
+				086F347A217710C7002CF6EA /* AppDelegate.swift in Sources */,
+				ECF8D30A23FA02A700D58308 /* TorchModule.mm in Sources */,
+				EC5F348B249164CC00464A48 /* cityscapes.mlmodel in Sources */,
+				086F349021771B58002CF6EA /* UIImage+Segmentation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		086F347D217710C7002CF6EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				086F347E217710C7002CF6EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		086F3482217710CB002CF6EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				086F3483217710CB002CF6EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		086F3486217710CB002CF6EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		086F3487217710CB002CF6EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		086F3489217710CB002CF6EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6901A7741FE479518C4D03E1 /* Pods-Aurama.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P879X8V455;
+				INFOPLIST_FILE = Aurama/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimin.Aurama;
+				PRODUCT_NAME = Aurama;
+				SWIFT_OBJC_BRIDGING_HEADER = "Aurama/TorchBridge/HelloWorld-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		086F348A217710CB002CF6EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95CACEF3E8E23358BF501AC9 /* Pods-Aurama.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P879X8V455;
+				INFOPLIST_FILE = Aurama/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimin.Aurama;
+				PRODUCT_NAME = Aurama;
+				SWIFT_OBJC_BRIDGING_HEADER = "Aurama/TorchBridge/HelloWorld-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		086F3471217710C7002CF6EA /* Build configuration list for PBXProject "Aurama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086F3486217710CB002CF6EA /* Debug */,
+				086F3487217710CB002CF6EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		086F3488217710CB002CF6EA /* Build configuration list for PBXNativeTarget "Aurama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086F3489217710CB002CF6EA /* Debug */,
+				086F348A217710CB002CF6EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 086F346E217710C7002CF6EA /* Project object */;
+}
