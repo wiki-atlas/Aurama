@@ -2,7 +2,7 @@
 
 This is the iOS implementation of the paper: Notable Site Recognition using Deep Learning on Mobile and Crowd-sourced Imagery
 
-|Default|Localization|Wikipedia Description|
+|Image|Localization|Wikipedia Description|
 | :------: | :------: | :------: |
 |![ScreenShot1](Screenshots/ScreenShot1.png)|![ScreenShot2](Screenshots/ScreenShot2.png)|![ScreenShot3](Screenshots/ScreenShot3.png)
 
